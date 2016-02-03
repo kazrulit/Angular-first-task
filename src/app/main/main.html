@@ -1,0 +1,18 @@
+<div ng-cloak>
+  <md-content layout-md="column" layout="row">
+    <div flex ng-repeat="cat in cats">
+      <md-card ng-click="main.showToastr()">
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">{{cat.name}}</span>
+          </md-card-title-text>
+          <md-card-title-media>
+            <div class="md-media-sm card-media">
+              <img ng-src="{{cat.image}}">
+            </div>
+          </md-card-title-media>
+        </md-card-title>
+      </md-card>
+    </div>
+  </md-content>
+</div>
